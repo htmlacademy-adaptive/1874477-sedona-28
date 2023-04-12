@@ -27,13 +27,17 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+  font-family: "PT Sans", "Arial", sans-serif;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -78,19 +82,11 @@ body {
   background-color: transparent;
 }
 
-.video__button {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
 .header {
   width: 100%;
 }
 
 .header__title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 26px;
@@ -107,7 +103,6 @@ body {
 }
 
 .header__content {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
@@ -167,7 +162,6 @@ body {
 }
 
 .site-list__link {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 26px;
@@ -184,7 +178,7 @@ body {
 
 .hero {
   background-color: #5384a3;
-  background-image: url("../../img/hero-triangle.svg"), url("../../img/hero-background-mobile.jpg");
+  background-image: url("../img/hero-triangle.svg"), url("../img/hero-background-mobile.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center;
   background-size: cover, cover;
@@ -228,7 +222,7 @@ body {
   width: calc(100% + 36px);
   height: 100%;
   background-color: #81b3d2;
-  background-image: url("../../img/header-trinagle-mobile.svg");
+  background-image: url("../img/header-trinagle-mobile.svg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 768px 37px;
@@ -247,7 +241,7 @@ body {
   padding: 0;
 }
 
-.reason_wrapper {
+.reason__wrapper {
   padding: 37px 0;
   background-color: #81b3d2;
 }
@@ -270,7 +264,6 @@ body {
 }
 
 .reason__title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 26px;
@@ -292,7 +285,6 @@ body {
 }
 
 .reason__content {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
@@ -314,7 +306,6 @@ body {
 }
 
 .reason__pagination {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
@@ -338,11 +329,20 @@ body {
 }
 
 .search__header-title {
+  font-size: 21px;
   padding-bottom: 30px;
 }
 
 .search__header-content {
   padding-bottom: 32px;
+}
+
+.search__button {
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .map__wrapper {
@@ -451,6 +451,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .reviews__header {
@@ -485,7 +489,6 @@ body {
 }
 
 .group__title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 26px;
@@ -523,7 +526,6 @@ body {
 }
 
 .form-list__input {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 26px;
@@ -548,7 +550,7 @@ body {
   width: 58px;
   height: 58px;
   background-color: #e6e6e6;
-  background-image: url("../../img/phone.svg");
+  background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px 18px;
@@ -562,7 +564,7 @@ body {
   width: 58px;
   height: 58px;
   background-color: #e6e6e6;
-  background-image: url("../../img/email.svg");
+  background-image: url("../img/email.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 12px;
@@ -578,7 +580,6 @@ body {
 }
 
 .form-list__label {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 26px;
@@ -592,7 +593,7 @@ body {
 }
 
 .form-list__input[type=checkbox]:checked + .form-list__mark {
-  background-image: url("../../img/checked.svg");
+  background-image: url("../img/checked.svg");
   background-repeat: no-repeat;
   background-position: 12px 15px;
 }
@@ -613,14 +614,23 @@ body {
 }
 
 .review-text__input {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
   margin: 0;
   padding: 16px;
+}
+
+.form__submit {
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .form__legend {
@@ -648,7 +658,6 @@ body {
 }
 
 .meta__link {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 21px;
   line-height: 26px;
@@ -709,6 +718,15 @@ body {
   background-color: #ffffff;
 }
 
+.modal__button {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
 .modal__button-wrapper {
   display: flex;
   justify-content: center;
@@ -718,7 +736,6 @@ body {
 }
 
 .modal__title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 26px;
@@ -731,7 +748,6 @@ body {
 }
 
 .modal__content {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
